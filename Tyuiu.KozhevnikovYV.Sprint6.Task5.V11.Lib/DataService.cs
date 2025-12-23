@@ -25,11 +25,7 @@
                 string line;
                 while (( line = reader.ReadLine()) != null)
                 {
-                    if (!double.TryParse(line, NumberStyles.Any, CultureInfo.InvariantCulture, out double x))
-                    {
-                        Console.WriteLine("нипалучилос");
-                    }
-                    numsArray[index] = x;
+                    numsArray[index] = Convert.ToDouble(line);
                     index++;
                 }
             }
