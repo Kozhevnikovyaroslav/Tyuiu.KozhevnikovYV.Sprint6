@@ -22,6 +22,10 @@
                         {
                             res.Append(w).Append(' '); // можно AppendLine(w) если нужно с новой строки
                         }
+                        else if (w.IndexOf('e', StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            res.Append(w).Append(' '); // можно AppendLine(w) если нужно с новой строки
+                        }
                     }
                 }
             }
