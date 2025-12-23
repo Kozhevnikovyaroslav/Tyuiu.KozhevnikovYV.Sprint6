@@ -22,6 +22,7 @@
                         {
                             res.Append(w).Append(' '); // можно AppendLine(w) если нужно с новой строки
                         }
+ 
                     }
                 }
             }
