@@ -18,11 +18,7 @@
                     foreach (string w in words)
                     {
                         // слово содержит E или e
-                        if (w.IndexOf('E', StringComparison.OrdinalIgnoreCase) >= 0)
-                        {
-                            res.Append(w).Append(' '); // можно AppendLine(w) если нужно с новой строки
-                        }
-                        else if (w.IndexOf('e', StringComparison.OrdinalIgnoreCase) >= 0)
+                        if (w.IndexOf('E') >= 0)
                         {
                             res.Append(w).Append(' '); // можно AppendLine(w) если нужно с новой строки
                         }
