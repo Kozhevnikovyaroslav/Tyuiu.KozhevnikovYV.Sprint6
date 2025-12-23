@@ -16,8 +16,8 @@ namespace Tyuiu.KozhevnikovYV.Sprint6.Task5.V11
         {
             string path = Path.Combine(tempDir, fileName);
             dataGridViewFile.ColumnCount = 2;
-            dataGridViewFile.Columns[0].Width = 20;
-            dataGridViewFile.Columns[1].Width = 50;
+            dataGridViewFile.Columns[0].Width = 50;
+            dataGridViewFile.Columns[1].Width = 75;
 
             this.chartFile.ChartAreas[0].AxisX.Title = "Îñü Õ";
             this.chartFile.ChartAreas[0].AxisY.Title = "Îñü Y";
@@ -30,6 +30,7 @@ namespace Tyuiu.KozhevnikovYV.Sprint6.Task5.V11
                 dataGridViewFile.Rows.Add(Convert.ToString(i), Convert.ToString(mas[i]));
                 chartFile.Series[0].Points.AddXY(i, mas[i]);
             }
+            buttonDone.Enabled = false;
         }
     }
 }
